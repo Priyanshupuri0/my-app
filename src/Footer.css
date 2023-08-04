@@ -1,0 +1,37 @@
+.footer {
+    background-image: linear-gradient(to right, rgba(110, 108, 108, 0), rgb(168, 156, 156, 0.5));
+    /* margin-bottom: 5rem; */
+}
+.row.r {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 1em;
+}
+ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+}
+ul li a {
+  color: black;
+  text-decoration: none;
+}
+ul li a:hover {
+  color: grey;
+}
+li:not(:first-child) {
+  margin-top: 0.2em;
+}
+li:first-child {
+    margin-top: 1rem;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;   
+    padding-bottom: 20px;
+}

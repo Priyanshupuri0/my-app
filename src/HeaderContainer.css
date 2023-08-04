@@ -1,0 +1,56 @@
+.headerContent { 
+    width: 100%;
+    height: 50%; 
+    background-image: linear-gradient(to right, rgba(110, 108, 108, 0), rgb(168, 156, 156, 0.5));
+}
+
+.header-image {
+    width: 100%;
+    height: auto;
+    mix-blend-mode: darken;
+}
+
+.info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+    background-image: linear-gradient(to right, rgb(17, 246, 246, 0.6), rgb(17, 246, 246, 0.5));
+}
+.left-side {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 50px;
+    padding: 60px;
+}
+.left-side > h6 {
+    line-height: 30px;
+}
+
+.r {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+
+.promo {
+    font-size: 2rem;
+    padding: 5rem;
+}
+
+@media only screen and (max-width: 600px) {
+    .promo {
+        font-size: 1.6rem;
+        padding: 2rem;
+    }
+    .left-side {
+        padding: 2rem;
+    }
+    .left-side > h6 {
+        line-height: 1.8rem;
+    }
+}

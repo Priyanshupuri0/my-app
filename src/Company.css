@@ -1,0 +1,45 @@
+
+.marquee {
+  display: flex;
+  overflow: hidden;
+  user-select: none;
+  gap: 0.5rem;
+}
+.marquee-left {
+  display: flex;
+  overflow: hidden;
+  user-select: none;
+}
+
+.brands-wrap {
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: space-around;
+  min-width: 100%;
+  animation: marquee 15s linear infinite;
+}
+.brands-wrap-left {
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: space-around;
+  min-width: 100%;
+  animation: marquee 15s linear infinite reverse;
+}
+
+.icon {
+  padding: 10px;
+  width: 100px;
+  white-space: nowrap;
+  text-align: center;
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(calc(-100% - 1rem));
+  }
+}
